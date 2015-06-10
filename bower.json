@@ -1,0 +1,20 @@
+{
+  "name": "isolated-scope-embeddable",
+  "main": "isolated-scope-embeddable.js",
+  "version": "1.0.0",
+  "authors": [
+    "Osama Sidat <oosidat@gmail.com>"
+  ],
+  "description": "A directive to access a template directive's isolated scope, especially when used within an iteration (e.g. ng-repeat)",
+  "keywords": [
+    "ngTransclude", "ng-transclude", "isolated scope"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
