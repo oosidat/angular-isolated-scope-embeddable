@@ -1,19 +1,19 @@
-angular.module('isolatedScopeEmbeddable')
-.directive('embeddable', function(){
-	return {
-		link: function($scope, $elem, $attributes, controller, $transcludeFn) {
+angular.module('isolatedScopeEmbeddable', [])
+	.directive('embeddable', function(){
+		return {
+			link: function($scope, $elem, $attributes, controller, $transcludeFn) {
 
-			var innerScope = $scope.$new();
+				var innerScope = $scope.$new();
 
-			$transcludeFn(innerScope, function(clone) {
-				$elem.empty();
-				$elem.append(clone);
+				$transcludeFn(innerScope, function(clone) {
+					$elem.empty();
+					$elem.append(clone);
 
-				$elem.on('$destroy', function() {
-					innerScope.$destroy();
+					$elem.on('$destroy', function() {
+						innerScope.$destroy();
+					});
+
 				});
-
-			});
-		}
-	};
-});
+			}
+		};
+	});
