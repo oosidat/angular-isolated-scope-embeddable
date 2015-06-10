@@ -1,4 +1,4 @@
-# isolated-scope-embeddable
+# angular-isolated-scope-embeddable
 
 ## Purpose
 
@@ -9,6 +9,8 @@
 ## Installation
 
 `bower` instructions coming soon...
+
+Add `isolatedScopeEmbeddable` as a dependency on the directive containing `embeddable` in its template.
 
 ## Usage
 
